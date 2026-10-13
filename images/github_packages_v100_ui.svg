@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 660" width="100%" height="100%">
+  <defs>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#161b22" />
+      <stop offset="100%" stop-color="#0d1117" />
+    </linearGradient>
+    <filter id="boxShadow" x="-3%" y="-3%" width="106%" height="106%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <rect width="980" height="660" rx="14" fill="#030712" />
+
+  <g transform="translate(20, 20)" filter="url(#boxShadow)">
+    <rect width="940" height="620" rx="10" fill="#0d1117" stroke="#30363d" stroke-width="1.2"/>
+    
+    <!-- Top GitHub Nav -->
+    <rect width="940" height="52" rx="10" fill="#161b22"/>
+    <rect y="42" width="940" height="10" fill="#161b22"/>
+    
+    <text x="24" y="32" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="700" fill="#f0f6fc">GitHub Packages / Package details: release-web-app</text>
+    <text x="915" y="32" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#8b949e" text-anchor="end">devops-student / Packages</text>
+
+    <!-- Main Packages UI -->
+    <g transform="translate(30, 75)">
+      <!-- Package Header -->
+      <g transform="translate(0, 0)">
+        <rect width="48" height="48" rx="8" fill="#1f6feb"/>
+        <text x="24" y="30" font-family="sans-serif" font-size="18" font-weight="700" fill="#ffffff" text-anchor="middle">GHCR</text>
+
+        <text x="60" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="700" fill="#f0f6fc">ghcr.io/devops-student/release-web-app</text>
+        <text x="60" y="44" font-family="sans-serif" font-size="12" fill="#8b949e">Container image • Published by GitHub Actions • 3 tags (v1.0.0, 1.0, latest)</text>
+      </g>
+
+      <!-- Pull Command Box -->
+      <g transform="translate(0, 65)">
+        <rect width="880" height="55" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+        <text x="20" y="22" font-family="sans-serif" font-size="10.5" font-weight="700" fill="#8b949e">PULL THIS CONTAINER IMAGE:</text>
+        <text x="20" y="42" font-family="'Fira Code', monospace" font-size="12" font-weight="600" fill="#58a6ff">docker pull ghcr.io/devops-student/release-web-app:v1.0.0</text>
+        
+        <!-- Copy button simulation -->
+        <rect x="795" y="14" width="70" height="28" rx="6" fill="#21262d" stroke="#30363d" stroke-width="1"/>
+        <text x="830" y="32" font-family="sans-serif" font-size="11" fill="#c9d1d9" text-anchor="middle">Copy</text>
+      </g>
+
+      <!-- Versions Section -->
+      <g transform="translate(0, 140)">
+        <text y="20" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="700" fill="#f0f6fc">Recent image versions</text>
+
+        <!-- Version Table Box -->
+        <rect y="32" width="880" height="150" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+        
+        <!-- Table Header -->
+        <rect y="32" width="880" height="34" rx="8" fill="#21262d"/>
+        <text x="20" y="54" font-family="sans-serif" font-size="11" font-weight="700" fill="#8b949e">TAG</text>
+        <text x="260" y="54" font-family="sans-serif" font-size="11" font-weight="700" fill="#8b949e">DIGEST &amp; ARCH</text>
+        <text x="560" y="54" font-family="sans-serif" font-size="11" font-weight="700" fill="#8b949e">SIZE</text>
+        <text x="720" y="54" font-family="sans-serif" font-size="11" font-weight="700" fill="#8b949e">PUBLISHED</text>
+
+        <!-- Row 1: v1.0.0 -->
+        <g transform="translate(20, 80)">
+          <!-- Tag pills -->
+          <rect width="55" height="22" rx="4" fill="#238636"/>
+          <text x="27" y="15" font-family="monospace" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">v1.0.0</text>
+          
+          <rect x="62" width="40" height="22" rx="4" fill="#21262d" stroke="#30363d"/>
+          <text x="82" y="15" font-family="monospace" font-size="10" fill="#c9d1d9" text-anchor="middle">1.0</text>
+
+          <rect x="108" width="50" height="22" rx="4" fill="#21262d" stroke="#30363d"/>
+          <text x="133" y="15" font-family="monospace" font-size="10" fill="#c9d1d9" text-anchor="middle">latest</text>
+
+          <text x="240" y="15" font-family="monospace" font-size="11" fill="#58a6ff">sha256:4f8e9a2b...</text>
+          <text x="390" y="15" font-family="sans-serif" font-size="11" fill="#8b949e">linux/amd64</text>
+
+          <text x="540" y="15" font-family="sans-serif" font-size="11.5" font-weight="600" fill="#e6edf3">18.5 MB</text>
+          
+          <text x="700" y="15" font-family="sans-serif" font-size="11" fill="#3fb950">Just now (via release.yml)</text>
+        </g>
+
+        <!-- Divider line -->
+        <line x1="0" y1="118" x2="880" y2="118" stroke="#30363d"/>
+
+        <!-- Details note -->
+        <g transform="translate(20, 130)">
+          <circle cx="6" cy="12" r="5" fill="#238636"/>
+          <text x="18" y="16" font-family="sans-serif" font-size="10.5" fill="#a7f3d0">Container image được xây dựng hoàn toàn tự động từ Git Tag v1.0.0 và sẵn sàng phân phối Production.</text>
+        </g>
+      </g>
+
+      <!-- Verification card -->
+      <g transform="translate(0, 340)">
+        <rect width="880" height="150" rx="8" fill="#0d1117" stroke="#238636" stroke-width="1"/>
+        <text x="20" y="28" font-family="sans-serif" font-size="12.5" font-weight="700" fill="#6ee7b7">XÁC MINH PHÁT HÀNH THÀNH CÔNG GÓI CONTAINER:</text>
+        
+        <text x="20" y="55" font-family="sans-serif" font-size="11.5" fill="#cbd5e1">• Sự kiện kích hoạt: Lệnh git tag v1.0.0 &amp;&amp; git push origin v1.0.0 đã kích hoạt thành công workflow release.yml.</text>
+        <text x="20" y="80" font-family="sans-serif" font-size="11.5" fill="#cbd5e1">• Trích xuất nhãn: docker/metadata-action@v5 tự động sinh 3 nhãn định danh: v1.0.0, 1.0 và latest.</text>
+        <text x="20" y="105" font-family="sans-serif" font-size="11.5" fill="#cbd5e1">• Đẩy lên GHCR: docker/build-push-action@v5 đóng gói và đẩy trực tiếp vào mục Packages của tổ chức/cá nhân.</text>
+        <text x="20" y="130" font-family="sans-serif" font-size="11.5" fill="#3fb950" font-weight="600">• Trạng thái: Gói Image v1.0.0 hiển thị công khai trên GitHub Packages và sẵn sàng tải về với lệnh docker pull.</text>
+      </g>
+    </g>
+  </g>
+</svg>
